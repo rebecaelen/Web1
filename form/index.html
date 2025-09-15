@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário - Parte 1</title>
+</head>
+<body>
+    <form>
+        <label for="iptNome"></label> Nome:</label> <input type="text" id="iptNome" placeholder="Nome"><br>
+        <label for="iptSobrenome"></label>Sobrenome:</label> <input type="text" id="iptSobrenome" placeholder="Último Nome"><br>
+        <label for="iptIdade"></label>Idade:</label> <input type="number" id="iptIdade" placeholder="Idade"><br>
+        <label for="iptColor"></label>Cor Favorita:</label> <input type="color" id="iptColor"><br>
+        <label for="iptDate"></label>Data de Nascimento:</label> <input type="date" id="iptDate"><br>
+        <label for="iptPass"></label>Senha:</label> <input type="password" id="iptPass" placeholder="Senha"><br>
+
+    <p>Sobre a titulação, possui nível superio?</p>
+    <input type="radio" id="iptNSS" name="nmNS" value="0"> SIM<br>
+    <input type="radio" id="Sim" name="nmNS" value="1"> NÃO<br>
+
+    <p>Linguagem favoritas:</p>
+    <input type="checkbox" id="ckLang" value="0"> Java Script<br>
+    <input type="checkbox" id="ckLang" value="1"> Python<br>
+    <input type="checkbox" id="ckLang" value="2"> Java<br>
+    <input type="checkbox" id="ckLang" value="3"> C<br>
+    <input type="checkbox" id="ckLang" value="4"> Ruby<br>
+    <input type="checkbox" id="ckLang" value="5"> C#<br>
+    <br><textarea id="taComentarios" rows="3" cols="40" placeholder="Qual sua experiência?"></textarea>
+    
+    <p>Naturalidade:<br>
+    <select id="iptEstado"><br>
+    <option value="SP">São Paulo</option>
+    <option value="PR">Paraná</option>
+    <option value="MG">Minas Gerais</option>
+    <option value="RJ">Rio de Janeiro</option>
+    <option value="RS">Rio Grande do Sul</option>
+    </select>
+
+    <p><input type="button" value="Enviar" onclick="mostrarDados()"><br></p>
